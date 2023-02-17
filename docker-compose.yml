@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    environment:
+      - PRIVATE_KEY=[your private key bytes array]
+    ports:
+      - "3001:3001"
