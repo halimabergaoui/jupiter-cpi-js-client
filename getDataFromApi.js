@@ -52,7 +52,8 @@ _publics.getDataFromApi = async (connection, mint1, mint2, wallet) => {
     const swapTransactionBuf = Buffer.from(swapTransaction, 'base64');
     var transaction = VersionedTransaction.deserialize(swapTransactionBuf);
     console.log("////////////////////////")
-    console.log(transaction)
+    
+    console.log(JSON.stringify(transaction))
     console.log("////////////////////////")
     // get address lookup table accounts
     const addressLookupTableAccounts = await Promise.all(
